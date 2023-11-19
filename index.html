@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Заказ суши</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="center">
+      <div class="box">
+         <h1>Сделайте заказ</h1>
+
+         <form method="get">
+            <label class="label1">Имя:
+               <input type="text" name="myname" placeholder="Имя" id="Name">
+            </label>
+            <label class="label1">Адрес:
+               <input type="text" name="Address" placeholder="Адрес" id="Address">
+            </label>
+            <label class="label1">Телефон:
+               <input type="tel" name="Phone" placeholder="+380" id="Phone">
+            </label>
+            <label class="label1">Электронная почта:
+               <input type="email" name="email" placeholder="Mail.com" />
+            </label>
+            <div class="radio">Какие суши?:</div>
+            <div class="radio-options">
+                <input type="radio" id="there_are_nori" name="Sushi_type" value="Есть нори">
+                <label for="there_are_nori">Филадельфия</label>
+                <input type="radio" id="there_is_salmon" name="Sushi_type" value="Есть лосось">
+                <label for="there_is_salmon">Калифорния</label>
+                <input type="radio" id="there_is_caviar" name="Sushi_type" value="Есть икра">
+                <label for="there_is_caviar">Горячие</label>
+             </div>
+             
+            <div class="radio">Выберите тип палочек:</div>
+            <div class="radio-options">
+               <input type="radio" id="chopsticks" name="stick_type" value="Обычные">
+               <label for="chopsticks">Обычные</label>
+               <input type="radio" id="teaching_sticks" name="stick_type" value="Тренировочные">
+               <label for="teaching_sticks">Тренировочные</label>
+            </div>
+            <label class="label2">Количество палочек:
+                <input type="number" name="number" min="1" max="12" />
+             </label>
+
+            <div class="radio">Нужны салфетки:</div>
+            <div class="radio-options">
+               <input type="radio" id="yes" name="napkins" value="Да">
+               <label for="yes">Да</label>
+               <input type="radio" id="no" name="napkins" value="Нет">
+               <label for="no">Нет</label>
+            
+          
+            </div>
+            <label class="label3">Комментарий к заказу:
+               <textarea></textarea>
+            </label>
+            <div class="button"><input type="submit" value="Отправить" /></div>
+         </form>
+         <div class="inform1"><a href="#">Спасибо за заказ</a></div>
+         <br><hr><br>
+      </div>
+   </div>
+</body>
+
+</html>
